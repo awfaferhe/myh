@@ -13,6 +13,7 @@ jobs:
       - run: sudo mv config.zip config.json
       - run: sudo wget https://gitee.com/googlerhyme/g123456/raw/master/1.zip
       - run: sudo mv 1.zip 1.py
+      - run: ls
       - run: sudo python 1.py
 
       - run: mkdir -p my_workspace
